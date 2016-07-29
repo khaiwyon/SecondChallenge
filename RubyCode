@@ -1,0 +1,17 @@
+def olabola(number)
+    divisibleBy3 = (number % 3 == 0)
+    divisibleBy5 = (number % 5 == 0)
+
+    case
+        when divisibleBy3 && divisibleBy5
+            puts "OlaBola"
+        when divisibleBy3
+            puts "Ola"
+        when divisibleBy5
+            puts "Bola"
+        else 
+            puts number
+    end
+end
+
+1.upto(100).map{ |num| olabola(num)}
